@@ -47,6 +47,6 @@ To setup tests, make sure all the ruby versions defined in `.travis.yml` are ins
 
 Run tests via:
 
-* `rake wwtd` for all combinations of ruby/rails versions
-* `rake wwtd:local` for all rails versions, but only on current ruby
+* `rake wwtd` for all combinations of ruby/rails/paperclip versions
+* `rake wwtd:local` for all rails/paperclip versions, but only on current ruby
 * `rake spec` (or e.g. `bundle exec rspec spec --format documentation`) with main Gemfile and only on current ruby
