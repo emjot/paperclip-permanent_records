@@ -5,6 +5,13 @@ when the model is really destroyed.
 
 See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecomment-4946231).
 
+## Compatibility
+
+Sensible combinations of: paperclip 3.4 - 4.1, rails 3.2 - 4.2, ruby 1.9.3 - 2.2.
+
+Please see `.travis.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
+might cause data loss.
+
 ## Installation
 
 Add this line to your application's Gemfile:
