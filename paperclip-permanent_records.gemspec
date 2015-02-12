@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'paperclip', '~> 3.4.0'
-  spec.add_runtime_dependency 'permanent_records', '~> 3.1.0'
+  spec.add_runtime_dependency 'paperclip', '>= 3.4'
+  spec.add_runtime_dependency 'permanent_records', '~> 3.2.0'
 
   spec.add_development_dependency 'appraisal', '~> 0.5.1'
   spec.add_development_dependency 'bundler', '~> 1.7'
