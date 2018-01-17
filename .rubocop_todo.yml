@@ -31,9 +31,3 @@ Style/Documentation:
     - 'lib/paperclip/permanent_records.rb'
     - 'lib/paperclip/permanent_records/active_record.rb'
     - 'lib/paperclip/permanent_records/paperclip_patch.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-Style/UnneededPercentQ:
-  Exclude:
-    - 'paperclip-permanent_records.gemspec'
