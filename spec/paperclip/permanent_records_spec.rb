@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Paperclip::PermanentRecords do
+RSpec.describe Paperclip::PermanentRecords do
   before(:each) do
     stub_const('Rails', instance_double('Rails'))
     allow(Rails).to receive(:root).and_return(ROOT.join('tmp'))
