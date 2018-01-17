@@ -4,7 +4,7 @@
 * Remove support for ruby 1.9 and 2.0
 * Test on ruby 2.1 and 2.3
 * Test with paperclip 4.2
-* Dev dependencies: update versions, add rubocop (+ lots of code style fixes)
+* Dev dependencies: update versions, add rubocop (+ lots of code style fixes), fix definitions
 
 # 0.2.0 (2015-03-11)
 
