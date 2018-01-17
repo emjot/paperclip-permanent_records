@@ -3,6 +3,6 @@
 source "https://rubygems.org"
 
 gem "rails", "~> 4.0.13"
-gem "paperclip", "~> 4.1.1"
+gem "paperclip", "~> 4.2.4"
 
 gemspec path: "../"

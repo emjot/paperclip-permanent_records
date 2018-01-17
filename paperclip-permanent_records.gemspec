@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'activerecord', '>= 4.0', '< 5'
-  spec.add_runtime_dependency 'paperclip', '>= 4.0'
+  spec.add_runtime_dependency 'paperclip', '>= 4.1'
   spec.add_runtime_dependency 'permanent_records', '~> 3.3.0'
 
   spec.add_development_dependency 'appraisal', '~> 2.2'
