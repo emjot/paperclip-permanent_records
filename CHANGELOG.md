@@ -1,4 +1,4 @@
-# (unreleased)
+# 0.3.0 (2018-01-17)
 
 * Remove support for rails < 4.0 and paperclip < 4.1
 * Remove support for ruby 1.9 and 2.0
