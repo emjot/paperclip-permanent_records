@@ -23,12 +23,6 @@ RSpec/ExampleLength:
   Exclude:
     - 'spec/paperclip/permanent_records_spec.rb'
 
-# Offense count: 1
-# Configuration parameters: IgnoreSymbolicNames.
-RSpec/VerifiedDoubles:
-  Exclude:
-    - 'spec/paperclip/permanent_records_spec.rb'
-
 # Offense count: 3
 Style/Documentation:
   Exclude:

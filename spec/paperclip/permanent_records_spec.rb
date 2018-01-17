@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Paperclip::PermanentRecords do
   before(:each) do
-    stub_const('Rails', double('Rails'))
+    stub_const('Rails', instance_double('Rails'))
     allow(Rails).to receive(:root).and_return(ROOT.join('tmp'))
     allow(Rails).to receive(:env).and_return('test')
     allow(Rails).to receive(:const_defined?).with(:Railtie).and_return(false)
