@@ -25,7 +25,7 @@ end
 # set up models
 require 'fileutils'
 require 'logger'
-tmpdir = File.join(File.dirname(__FILE__), "../tmp")
+tmpdir = File.join(File.dirname(__FILE__), '../tmp')
 FileUtils.mkdir(tmpdir) unless File.exist?(tmpdir)
 log = File.expand_path(File.join(tmpdir, 'permanent_records_test.log'))
 FileUtils.touch(log) unless File.exist?(log)

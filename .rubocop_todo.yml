@@ -32,18 +32,6 @@ Style/Documentation:
     - 'lib/paperclip/permanent_records/active_record.rb'
     - 'lib/paperclip/permanent_records/paperclip_patch.rb'
 
-# Offense count: 20
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'gemfiles/rails_4.0_pc_4.0.gemfile'
-    - 'gemfiles/rails_4.0_pc_4.1.gemfile'
-    - 'gemfiles/rails_4.2_pc_4.1.gemfile'
-    - 'paperclip-permanent_records.gemspec'
-    - 'spec/spec_helper.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 Style/UnneededInterpolation:

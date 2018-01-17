@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'appraisal', '~> 2.2'
   spec.add_development_dependency 'bundler', '~> 1.14'
-  spec.add_development_dependency 'rake', "~> 10.0"
+  spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec-rails'
   spec.add_development_dependency 'rubocop', '~> 0.51.0' # lock for now until rubocop-rspec can be updated
   spec.add_development_dependency 'rubocop-rspec', '1.5.1' # lock for now until we only use ruby > 2.1
