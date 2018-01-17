@@ -28,7 +28,7 @@ require 'logger'
 tmpdir = File.join(File.dirname(__FILE__), "../tmp")
 FileUtils.mkdir(tmpdir) unless File.exist?(tmpdir)
 log = File.expand_path(File.join(tmpdir, 'permanent_records_test.log'))
-FileUtils.touch(log) unless File.exists?(log)
+FileUtils.touch(log) unless File.exist?(log)
 ActiveRecord::Base.logger = Logger.new(log)
 ActiveRecord::LogSubscriber.attach_to(:active_record)
 ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => ':memory:')
