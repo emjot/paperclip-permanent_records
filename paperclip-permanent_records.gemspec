@@ -17,6 +17,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
+  spec.required_ruby_version = '>= 2.1.9'
+
   spec.add_dependency 'activerecord', ['>= 4.0', '< 5']
   spec.add_dependency 'paperclip', '>= 4.1'
   spec.add_dependency 'permanent_records', ['>= 3.3.0', '< 4.1.0']
