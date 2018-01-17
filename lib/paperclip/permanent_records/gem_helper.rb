@@ -19,7 +19,7 @@ module Paperclip
       end
 
       def version_tag
-        "#{version}"
+        version.to_s
       end
     end
   end
