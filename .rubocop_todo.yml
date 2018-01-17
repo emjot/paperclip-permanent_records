@@ -32,12 +32,6 @@ Style/Documentation:
     - 'lib/paperclip/permanent_records/active_record.rb'
     - 'lib/paperclip/permanent_records/paperclip_patch.rb'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/Encoding:
-  Exclude:
-    - 'paperclip-permanent_records.gemspec'
-
 # Offense count: 23
 # Cop supports --auto-correct.
 # Configuration parameters: SupportedStyles, UseHashRocketsWithSymbolValues, PreferHashRocketsForNonAlnumEndingSymbols.
