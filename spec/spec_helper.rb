@@ -31,7 +31,7 @@ log = File.expand_path(File.join(tmpdir, 'permanent_records_test.log'))
 FileUtils.touch(log) unless File.exist?(log)
 ActiveRecord::Base.logger = Logger.new(log)
 ActiveRecord::LogSubscriber.attach_to(:active_record)
-ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => ':memory:')
+ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 require File.expand_path('../data/schema', __FILE__)
 require File.expand_path('../data/models', __FILE__)
 I18n.locale = I18n.default_locale = :en

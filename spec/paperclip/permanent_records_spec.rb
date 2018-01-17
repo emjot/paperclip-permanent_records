@@ -18,7 +18,7 @@ describe Paperclip::PermanentRecords do
 
   describe '#destroy' do
     context 'on a permanent model with attachments' do
-      let!(:model) { PermanentPost.create!(:image => test_image_file) }
+      let!(:model) { PermanentPost.create!(image: test_image_file) }
       let!(:file_path) { model.image.path }
 
       it 'soft-deletes the model' do
@@ -65,7 +65,7 @@ describe Paperclip::PermanentRecords do
     end
 
     context 'on a permanent model without attachments' do
-      let!(:model) { PermanentUid.create!(:uid => 99) }
+      let!(:model) { PermanentUid.create!(uid: 99) }
 
       it 'soft-deletes the model' do
         expect { model.destroy }.to change { model.deleted? }.from(false).to(true)
@@ -83,7 +83,7 @@ describe Paperclip::PermanentRecords do
     end
 
     context 'on a regular model with attachments' do
-      let!(:model) { Post.create!(:image => test_image_file) }
+      let!(:model) { Post.create!(image: test_image_file) }
       let!(:file_path) { model.image.path }
 
       it 'destroys the model' do
@@ -98,7 +98,7 @@ describe Paperclip::PermanentRecords do
     end
 
     context 'on a regular model without attachments' do
-      let!(:model) { Uid.create!(:uid => 99) }
+      let!(:model) { Uid.create!(uid: 99) }
 
       it 'destroys the model' do
         expect { model.destroy }.to change(Uid, :count).from(1).to(0)
