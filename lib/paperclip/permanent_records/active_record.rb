@@ -21,7 +21,7 @@ module Paperclip
 
       # (this contains what each of the before_destroy callbacks originally did)
       def schedule_attachments_for_deletion
-        self.class.attachment_definitions.each { |name, _opts| send(name).send(:queue_all_for_delete) }
+        self.class.attachment_definitions.each_key { |name| send(name).send(:queue_all_for_delete) }
       end
     end
   end
