@@ -26,5 +26,4 @@ ActiveRecord::Schema.define do
   create_table :uids, :force => true do |t|
     t.integer :uid
   end
-
 end

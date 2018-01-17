@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Paperclip::PermanentRecords do
-
   before(:each) do
     stub_const('Rails', double('Rails'))
     allow(Rails).to receive(:root).and_return(ROOT.join('tmp'))
@@ -14,7 +13,7 @@ describe Paperclip::PermanentRecords do
   end
 
   let(:test_image_file) do
-    File.new(File.join(test_image_dir,'test.png'))
+    File.new(File.join(test_image_dir, 'test.png'))
   end
 
   describe '#destroy' do
