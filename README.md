@@ -41,7 +41,9 @@ This gem does basically two things:
 * mark attachments to be deleted in the model's `destroy` method
   (depending on whether the model is actually destroyed or only deleted)
 
-## Testing
+## Development
+
+Code style: Please use rubocop before you commit (`bundle exec rubocop`) and fix any warnings.
 
 To setup tests, make sure all the ruby versions defined in `.travis.yml` are installed on your system.
 

@@ -1,6 +1,7 @@
 module Paperclip
   module PermanentRecords
-    # Like Bundler::GemHelper, but without the 'release' task (would need to be implemented for release on gems.emjot.de)
+    # Like Bundler::GemHelper, but without the 'release' task
+    # (would need to be implemented for release on gems.emjot.de)
     class GemHelper < Bundler::GemHelper
       def install
         built_gem_path = nil
@@ -18,7 +19,7 @@ module Paperclip
       end
 
       def version_tag
-        "#{version}"
+        version.to_s
       end
     end
   end
