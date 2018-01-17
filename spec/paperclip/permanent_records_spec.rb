@@ -8,7 +8,7 @@ describe Paperclip::PermanentRecords do
     allow(Rails).to receive(:const_defined?).with(:Railtie).and_return(false)
   end
 
-  let (:test_image_dir) do
+  let(:test_image_dir) do
     File.expand_path(File.join(File.dirname(__FILE__), '..', 'data'))
   end
 
