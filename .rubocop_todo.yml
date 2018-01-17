@@ -32,13 +32,6 @@ Style/Documentation:
     - 'lib/paperclip/permanent_records/active_record.rb'
     - 'lib/paperclip/permanent_records/paperclip_patch.rb'
 
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: PreferredDelimiters.
-Style/PercentLiteralDelimiters:
-  Exclude:
-    - 'paperclip-permanent_records.gemspec'
-
 # Offense count: 20
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, SupportedStyles, ConsistentQuotesInMultiline.

@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = Paperclip::PermanentRecords::VERSION
   spec.authors       = ['Maximilian Herold']
   spec.email         = ['herold@emjot.de']
-  spec.summary       = %q{Make paperclip attachments work with permanent_records}
-  spec.description   = %q{Make paperclip attachments work with permanent_records}
+  spec.summary       = %q(Make paperclip attachments work with permanent_records)
+  spec.description   = %q(Make paperclip attachments work with permanent_records)
   spec.homepage      = ''
   spec.license       = 'MIT'
 
