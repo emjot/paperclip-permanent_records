@@ -23,23 +23,6 @@ module Paperclip
       def schedule_attachments_for_deletion
         self.class.attachment_definitions.each { |name, _opts| send(name).send(:queue_all_for_delete) }
       end
-
-      # Need to overwrite some of the above when working with paperclip < 3.5.0
-      module Paperclip34Compat
-        extend ActiveSupport::Concern
-
-        private
-
-        def has_paperclip_attachments?
-          respond_to?(:prepare_for_destroy)
-        end
-
-        # (this contains the original {Paperclip::InstanceMethods#prepare_for_destroy} method)
-        def schedule_attachments_for_deletion
-          Paperclip.log("Scheduling attachments for deletion.")
-          each_attachment { |_name, attachment| attachment.send(:queue_all_for_delete) }
-        end
-      end
     end
   end
 end

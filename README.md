@@ -7,7 +7,7 @@ See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecom
 
 ## Compatibility
 
-Sensible combinations of: paperclip 3.4 - 4.1, rails 3.2 - 4.2, ruby 1.9.3 - 2.2.
+Works with paperclip 4.0 - 4.1, rails 4.0 - 4.2, ruby 2.1 - 2.3.
 
 Please see `.travis.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
 might cause data loss.

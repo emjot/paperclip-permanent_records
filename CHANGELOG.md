@@ -1,3 +1,9 @@
+# (unreleased)
+
+* Remove support for rails < 4.0 and paperclip < 4.0
+* Remove support for ruby 1.9 and 2.0
+* Test on ruby 2.1 and 2.3
+
 # 0.2.0 (2015-03-11)
 
 * Update permanent_records dependency from 3.2 to 3.3
