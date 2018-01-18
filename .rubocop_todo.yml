@@ -24,12 +24,6 @@ RSpec/ExampleLength:
   Exclude:
     - 'spec/paperclip/permanent_records_spec.rb'
 
-# Offense count: 1
-# Configuration parameters: .
-# SupportedStyles: implicit, each, example
-RSpec/HookArgument:
-  EnforcedStyle: each
-
 # Offense count: 4
 # Configuration parameters: AggregateFailuresByDefault.
 RSpec/MultipleExpectations:

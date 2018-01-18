@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Paperclip::PermanentRecords do
-  before(:each) do
+  before do
     stub_const('Rails', instance_double('Rails'))
     allow(Rails).to receive(:root).and_return(ROOT.join('tmp'))
     allow(Rails).to receive(:env).and_return('test')
