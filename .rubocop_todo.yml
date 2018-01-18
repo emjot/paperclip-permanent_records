@@ -35,13 +35,6 @@ RSpec/NestedGroups:
   Exclude:
     - 'spec/paperclip/permanent_records_spec.rb'
 
-# Offense count: 16
-# Configuration parameters: Strict, EnforcedStyle.
-# SupportedStyles: inflected, explicit
-RSpec/PredicateMatcher:
-  Exclude:
-    - 'spec/paperclip/permanent_records_spec.rb'
-
 # Offense count: 3
 Style/Documentation:
   Exclude:

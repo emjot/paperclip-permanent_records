@@ -26,40 +26,40 @@ RSpec.describe Paperclip::PermanentRecords do
       end
 
       it 'keeps the model' do
-        expect(model.destroy.destroyed?).to be_falsey
+        expect(model.destroy).not_to be_destroyed
       end
 
       it "keeps the attachments' files" do
         model.destroy
-        expect(model.image?).to be_truthy
-        expect(File.exist?(file_path)).to be_truthy
+        expect(model).to be_image
+        expect(File).to be_exist(file_path)
 
         # should still be okay even after saving again
         model.save!
-        expect(model.image?).to be_truthy
-        expect(File.exist?(file_path)).to be_truthy
+        expect(model).to be_image
+        expect(File).to be_exist(file_path)
       end
 
       it "keeps the attachments' files after revive" do
         model.destroy.revive
-        expect(model.image?).to be_truthy
-        expect(File.exist?(file_path)).to be_truthy
+        expect(model).to be_image
+        expect(File).to be_exist(file_path)
 
         # should still be okay even after saving again
         model.save!
-        expect(model.image?).to be_truthy
-        expect(File.exist?(file_path)).to be_truthy
+        expect(model).to be_image
+        expect(File).to be_exist(file_path)
       end
 
       context 'with :force option' do
         it 'destroys the model' do
-          expect(model.destroy(:force).destroyed?).to be_truthy
+          expect(model.destroy(:force)).to be_destroyed
         end
 
         it "deletes the attachments' files" do
           model.destroy(:force)
-          expect(model.image?).to be_falsey
-          expect(File.exist?(file_path)).to be_falsey
+          expect(model).not_to be_image
+          expect(File).not_to be_exist(file_path)
         end
       end
     end
@@ -72,12 +72,12 @@ RSpec.describe Paperclip::PermanentRecords do
       end
 
       it 'keeps the model' do
-        expect(model.destroy.destroyed?).to be_falsey
+        expect(model.destroy).not_to be_destroyed
       end
 
       context 'with :force option' do
         it 'destroys the model' do
-          expect(model.destroy(:force).destroyed?).to be_truthy
+          expect(model.destroy(:force)).to be_destroyed
         end
       end
     end
@@ -92,8 +92,8 @@ RSpec.describe Paperclip::PermanentRecords do
 
       it "deletes the attachments' files" do
         model.destroy
-        expect(model.image?).to be_falsey
-        expect(File.exist?(file_path)).to be_falsey
+        expect(model).not_to be_image
+        expect(File).not_to be_exist(file_path)
       end
     end
 
