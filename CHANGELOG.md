@@ -7,6 +7,7 @@
 * Update permanent_records dependency to at least 4.2.7 (currenly the latest)
 * paperclip: update patch to its 5.1.0 counterpart, test with 5.0 and 5.1
 * Don't trigger ActiveRecord loading on requiring this gem
+* Dev dependencies: update rake and rubocop/rubocop-rspec
 
 # 0.3.0 (2018-01-17)
 
