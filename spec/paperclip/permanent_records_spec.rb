@@ -22,7 +22,7 @@ RSpec.describe Paperclip::PermanentRecords do
       let!(:file_path) { model.image.path }
 
       it 'soft-deletes the model' do
-        expect { model.destroy }.to change { model.deleted? }.from(false).to(true)
+        expect { model.destroy }.to change(model, :deleted?).from(false).to(true)
       end
 
       it 'keeps the model' do
@@ -68,7 +68,7 @@ RSpec.describe Paperclip::PermanentRecords do
       let!(:model) { PermanentUid.create!(uid: 99) }
 
       it 'soft-deletes the model' do
-        expect { model.destroy }.to change { model.deleted? }.from(false).to(true)
+        expect { model.destroy }.to change(model, :deleted?).from(false).to(true)
       end
 
       it 'keeps the model' do

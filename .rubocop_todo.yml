@@ -24,13 +24,6 @@ RSpec/ExampleLength:
   Exclude:
     - 'spec/paperclip/permanent_records_spec.rb'
 
-# Offense count: 2
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: method_call, block
-RSpec/ExpectChange:
-  Exclude:
-    - 'spec/paperclip/permanent_records_spec.rb'
-
 # Offense count: 1
 # Configuration parameters: .
 # SupportedStyles: implicit, each, example
