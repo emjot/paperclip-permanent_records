@@ -6,7 +6,9 @@ require 'paperclip/permanent_records/active_record'
 
 module Paperclip
   module PermanentRecords
-    ::ActiveRecord::Base.send :include, Paperclip::PermanentRecords::ActiveRecord
+    ActiveSupport.on_load(:active_record) do
+      ::ActiveRecord::Base.send :include, Paperclip::PermanentRecords::ActiveRecord
+    end
 
     require 'paperclip/permanent_records/paperclip_patch'
   end

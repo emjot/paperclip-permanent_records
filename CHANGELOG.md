@@ -1,6 +1,7 @@
 # (unreleased)
 
 * paperclip: update patch to its 5.1.0 counterpart, test 5.0 and 5.1
+* Don't trigger ActiveRecord loading on requiring this gem
 
 # 0.3.0 (2018-01-17)
 
