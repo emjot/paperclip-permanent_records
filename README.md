@@ -47,7 +47,8 @@ This gem does basically two things:
 
 Code style: Please use rubocop before you commit (`bundle exec rubocop`) and fix any warnings.
 
-To setup tests, make sure all the ruby versions defined in `.travis.yml` are installed on your system.
+To setup tests, make sure all the ruby versions defined in `.travis.yml` are installed on your system. 
+Use `bundle exec appraisal generate` to generate the gemfiles if you change them in `Appraisals` and `.travis.yml`.
 
 Run tests via:
 
