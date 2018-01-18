@@ -24,19 +24,6 @@ RSpec/ExampleLength:
   Exclude:
     - 'spec/paperclip/permanent_records_spec.rb'
 
-# Offense count: 2
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: method_call, block
-RSpec/ExpectChange:
-  Exclude:
-    - 'spec/paperclip/permanent_records_spec.rb'
-
-# Offense count: 1
-# Configuration parameters: .
-# SupportedStyles: implicit, each, example
-RSpec/HookArgument:
-  EnforcedStyle: each
-
 # Offense count: 4
 # Configuration parameters: AggregateFailuresByDefault.
 RSpec/MultipleExpectations:
@@ -45,13 +32,6 @@ RSpec/MultipleExpectations:
 # Offense count: 2
 # Configuration parameters: Max.
 RSpec/NestedGroups:
-  Exclude:
-    - 'spec/paperclip/permanent_records_spec.rb'
-
-# Offense count: 16
-# Configuration parameters: Strict, EnforcedStyle.
-# SupportedStyles: inflected, explicit
-RSpec/PredicateMatcher:
   Exclude:
     - 'spec/paperclip/permanent_records_spec.rb'
 
