@@ -1,3 +1,7 @@
+# (unreleased)
+
+* paperclip: update patch to its 5.1.0 counterpart, test 5.0 and 5.1
+
 # 0.3.0 (2018-01-17)
 
 * Remove support for rails < 4.0 and paperclip < 4.1
