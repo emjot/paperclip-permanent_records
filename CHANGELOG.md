@@ -1,4 +1,4 @@
-# (unreleased)
+# 0.4.0 (2018-01-18)
 
 * Remove support for rails < 4.2
 * Remove support for ruby 2.1
