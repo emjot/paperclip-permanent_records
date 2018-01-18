@@ -1,13 +1,24 @@
 language: ruby
 rvm:
-  - 2.1.10
   - 2.2.9
   - 2.3.5
+  - 2.4.3
+  - 2.5.0
 script: "bundle exec rake spec"
 gemfile:
-  - gemfiles/rails_4.0_pc_4.1.gemfile
-  - gemfiles/rails_4.0_pc_4.2.gemfile
   - gemfiles/rails_4.2_pc_4.1.gemfile
   - gemfiles/rails_4.2_pc_4.2.gemfile
   - gemfiles/rails_4.2_pc_5.0.gemfile
   - gemfiles/rails_4.2_pc_5.1.gemfile
+  - gemfiles/rails_5.0_pc_5.0.gemfile
+  - gemfiles/rails_5.1_pc_5.1.gemfile
+matrix:
+  exclude:
+    - rvm: 2.5.0
+      gemfile: gemfiles/rails_4.2_pc_4.1.gemfile
+    - rvm: 2.5.0
+      gemfile: gemfiles/rails_4.2_pc_4.2.gemfile
+    - rvm: 2.5.0
+      gemfile: gemfiles/rails_4.2_pc_5.0.gemfile
+    - rvm: 2.5.0
+      gemfile: gemfiles/rails_4.2_pc_5.1.gemfile
