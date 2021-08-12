@@ -7,9 +7,9 @@ See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecom
 
 ## Compatibility
 
-* rails 4.2: works with paperclip 4.1 - 5.1 and ruby 2.2 - 2.4.
-* rails 5.0 - 5.1 : works with paperclip 5.0 - 5.1 and ruby 2.2 - 2.5.
-* all tested with permanent_records 4.2.7.
+* rails 5.2: works with paperclip 6.0 and ruby 2.5 or later
+* tested with permanent_records 5.0.0
+* previous versions of ruby/rails/paperclip: please check version 0.4.x of this gem
 
 Please see `.travis.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
 might cause data loss.
