@@ -7,7 +7,7 @@ See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecom
 
 ## Compatibility
 
-* rails 5.2: works with paperclip 6.0 and ruby 2.5 or later
+* rails 5.2: works with paperclip 6.x and ruby 2.5 or later
 * tested with permanent_records 5.0.0
 * previous versions of ruby/rails/paperclip: please check version 0.4.x of this gem
 

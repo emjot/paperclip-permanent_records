@@ -1,4 +1,4 @@
-# Patch for paperclip >= 3.5.0 (based on 5.1.0)
+# Patch for paperclip >= 3.5.0 (based on 6.1.0)
 
 module Paperclip
   class HasAttachedFile

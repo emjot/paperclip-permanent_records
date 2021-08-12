@@ -1,11 +1,11 @@
 # (unreleased)
 
-* Remove support for rails < 5.2
-* Remove support for ruby < 2.5
+* Drop support for rails < 5.2
+* Drop support for ruby < 2.5
 * Test with rails 5.2
 * Test on ruby 2.6
 * Update permanent_records to at least 5.0.0 (currently the latest)
-* paperclip: drop support for < 6.0
+* paperclip: drop support for < 6.0, test 6.0 and 6.1
 * Update dev dependencies (+ some code style fixes)
 
 # 0.4.0 (2018-01-18)

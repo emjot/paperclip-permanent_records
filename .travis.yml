@@ -5,3 +5,4 @@ rvm:
 script: "bundle exec rake spec"
 gemfile:
   - gemfiles/rails_5.2_pc_6.0.gemfile
+  - gemfiles/rails_5.2_pc_6.1.gemfile
