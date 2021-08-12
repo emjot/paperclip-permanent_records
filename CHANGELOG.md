@@ -6,7 +6,7 @@
 * Test on ruby 2.6
 * Update permanent_records to at least 5.0.0 (currently the latest)
 * paperclip: drop support for < 6.0
-* Update dev dependencies
+* Update dev dependencies (+ some code style fixes)
 
 # 0.4.0 (2018-01-18)
 

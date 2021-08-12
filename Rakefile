@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bundler/setup'
 require 'paperclip/permanent_records/gem_tasks'
 require 'appraisal'
