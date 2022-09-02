@@ -1,6 +1,7 @@
 # (unreleased)
 
 * Drop support for ruby < 2.6
+* (internal) use current rubocop (1.36) + configs, re-generate todos + fix warnings
 
 # 0.5.0 (2021-08-12)
 
