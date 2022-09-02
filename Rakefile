@@ -14,8 +14,6 @@ task all: ['appraisal:install'] do
   exec('rake appraisal spec')
 end
 
-task local: 'wwtd:local' # run all gemfiles with local ruby
-
 desc 'Run all tests'
 RSpec::Core::RakeTask.new('spec') do |t|
   t.pattern = FileList['spec/**/*_spec.rb']
