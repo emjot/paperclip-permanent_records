@@ -9,7 +9,7 @@ See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecom
 
 * rails 5.2: works with paperclip 6.x and ruby 2.6 or later
 * tested with permanent_records 5.0.0
-* previous versions of ruby/rails/paperclip: please check version 0.4.x of this gem
+* previous versions of ruby/rails/paperclip: please check version 0.5.x of this gem
 
 Please see `.travis.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
 might cause data loss.
