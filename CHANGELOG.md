@@ -1,6 +1,8 @@
 # (unreleased)
 
-* Change dependency from paperclip to maintained fork kt-paperclip (https://github.com/kreeti/kt-paperclip)
+To upgrade to this version, remove any dependencies to paperclip from your project and switch to kt-paperclip (https://github.com/kreeti/kt-paperclip).
+
+* Change dependency from the discontinued paperclip to kt-paperclip
 * Drop support for (kt-)paperclip < 6.2.2
 * Drop support for ruby < 2.6
 * Remove rake `local` task (unnecessary alias for `wwtd:local`)

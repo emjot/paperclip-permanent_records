@@ -33,6 +33,8 @@ Or install it yourself as:
 
     $ gem install paperclip-permanent_records
 
+Ensure that you don't have any dependencies to the paperclip gem in your project, only to the kt-paperclip gem!
+
 ## Usage
 
 Nothing to do, this should just work.
