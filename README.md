@@ -7,7 +7,7 @@ See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecom
 
 ## Compatibility
 
-* rails 5.2: works with paperclip 6.x and ruby 2.5 or later
+* rails 5.2: works with paperclip 6.x and ruby 2.6 or later
 * tested with permanent_records 5.0.0
 * previous versions of ruby/rails/paperclip: please check version 0.4.x of this gem
 
@@ -47,7 +47,7 @@ This gem does basically two things:
 
 Code style: Please use rubocop before you commit (`bundle exec rubocop`) and fix any warnings.
 
-To setup tests, make sure all the ruby versions defined in `.travis.yml` are installed on your system. 
+To setup tests, make sure all the ruby versions defined in `.travis.yml` are installed on your system.
 Use `bundle exec appraisal generate` to generate the gemfiles if you change them in `Appraisals` and `.travis.yml`.
 
 Run tests via:
