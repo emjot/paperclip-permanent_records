@@ -4,7 +4,7 @@
 * Drop support for (kt-)paperclip < 6.2.2
 * Drop support for ruby < 2.6
 * Remove rake `local` task (unnecessary alias for `wwtd:local`)
-* (internal) use current rubocop (1.36) + configs, re-generate todos + fix warnings
+* (internal) use current rubocop (1.36) + configs, add rubocop-rake, re-generate todos + fix warnings
 
 # 0.5.0 (2021-08-12)
 
