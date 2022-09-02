@@ -5,9 +5,12 @@ when the model is really destroyed.
 
 See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecomment-4946231).
 
+Note that since paperclip is not maintained any more, we have switched the dependency to the fork
+[kt-paperclip](https://github.com/kreeti/kt-paperclip) after the 0.5.x releases of this gem.
+
 ## Compatibility
 
-* rails 5.2: works with paperclip 6.x and ruby 2.6 or later
+* rails 5.2: works with kt-paperclip 6.2.2+/7 and ruby 2.6 or later
 * tested with permanent_records 5.0.0
 * previous versions of ruby/rails/paperclip: please check version 0.5.x of this gem
 
@@ -52,6 +55,6 @@ Use `bundle exec appraisal generate` to generate the gemfiles if you change them
 
 Run tests via:
 
-* `rake wwtd` for all combinations of ruby/rails/paperclip versions
-* `rake wwtd:local` for all rails/paperclip versions, but only on current ruby
+* `rake wwtd` for all combinations of ruby/rails/kt-paperclip versions
+* `rake wwtd:local` for all rails/kt-paperclip versions, but only on current ruby
 * `rake spec` (or e.g. `bundle exec rspec spec --format documentation`) with main Gemfile and only on current ruby
