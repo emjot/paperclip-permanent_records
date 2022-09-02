@@ -4,5 +4,7 @@ rvm:
   - 2.7.6
 script: "bundle exec rake spec"
 gemfile:
-  - gemfiles/rails_5.2_pc_6.0.gemfile
-  - gemfiles/rails_5.2_pc_6.1.gemfile
+  - gemfiles/rails_5.2_pc_6.2.gemfile
+  - gemfiles/rails_5.2_pc_6.4.gemfile
+  - gemfiles/rails_5.2_pc_7.0.gemfile
+  - gemfiles/rails_5.2_pc_7.1.gemfile
