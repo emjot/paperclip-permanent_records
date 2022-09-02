@@ -5,8 +5,7 @@ when the model is really destroyed.
 
 See [paperclip #804](https://github.com/thoughtbot/paperclip/issues/804#issuecomment-4946231).
 
-Note that since paperclip is not maintained any more, we have switched the dependency to the fork
-[kt-paperclip](https://github.com/kreeti/kt-paperclip) after the 0.5.x releases of this gem.
+NOTE: Since paperclip is not maintained any more, we have switched the dependency to the fork [kt-paperclip](https://github.com/kreeti/kt-paperclip) in the 0.6+ versions of this gem.
 
 ## Compatibility
 

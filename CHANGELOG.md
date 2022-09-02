@@ -1,11 +1,11 @@
-# (unreleased)
+# 0.6.0 (2022-09-02)
 
 To upgrade to this version, remove any dependencies to paperclip from your project and switch to kt-paperclip (https://github.com/kreeti/kt-paperclip).
 
 * Change dependency from the discontinued paperclip to kt-paperclip
 * Drop support for (kt-)paperclip < 6.2.2
 * Drop support for ruby < 2.6
-* Remove rake `local` task (unnecessary alias for `wwtd:local`)
+* (dev) remove rake `local` task (unnecessary alias for `wwtd:local`)
 * (internal) use current rubocop (1.36) + configs, add rubocop-rake, re-generate todos + fix warnings
 
 # 0.5.0 (2021-08-12)
