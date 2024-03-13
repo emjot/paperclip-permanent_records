@@ -34,7 +34,7 @@ require 'active_record'
 require 'active_support'
 require 'paperclip/permanent_records'
 
-ActiveRecord::Base.send(:include, Paperclip::Glue)
+ActiveRecord::Base.include Paperclip::Glue
 
 Paperclip.interpolates(:test_env_number) do |_, _|
   ENV['TEST_ENV_NUMBER'].presence || '0'
