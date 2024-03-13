@@ -1,5 +1,7 @@
 # (unreleased)
 
+* Add support for rails 6.0/6.1, ruby 3.0/3.1
+* Drop support for kt-paperclip 6
 * Drop support for ruby < 2.7
 * (dev) add rake:release task
 * (dev) update dev dependencies, fix rubocop config, fix rubocop warnings
