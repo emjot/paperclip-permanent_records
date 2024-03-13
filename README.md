@@ -9,7 +9,7 @@ NOTE: Since paperclip is not maintained any more, we have switched the dependenc
 
 ## Compatibility
 
-* rails 5.2: works with kt-paperclip 6.2.2+/7 and ruby 2.6 or later
+* rails 5.2: works with kt-paperclip 6.2.2+/7 and ruby 2.7 or later
 * tested with permanent_records 5.0.0
 * previous versions of ruby/rails/paperclip: please check version 0.5.x of this gem
 
