@@ -1,6 +1,8 @@
 # (unreleased)
 
+* Drop support for ruby < 2.7
 * (dev) add rake:release task
+* (dev) update dev dependencies, fix rubocop config
 
 # 0.6.0 (2022-09-02)
 
