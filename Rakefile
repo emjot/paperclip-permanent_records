@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'paperclip/permanent_records/gem_tasks'
+
+require 'bundler/gem_helper'
+require 'paperclip/permanent_records/gem_helper'
+Bundler::GemHelper.prepend(Paperclip::PermanentRecords::GemHelper)
+require 'bundler/gem_tasks'
+
 require 'appraisal'
 require 'rspec/core/rake_task'
 require 'wwtd/tasks'

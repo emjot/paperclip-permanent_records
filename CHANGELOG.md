@@ -1,3 +1,7 @@
+# (unreleased)
+
+* (dev) add rake:release task
+
 # 0.6.0 (2022-09-02)
 
 To upgrade to this version, remove any dependencies to paperclip from your project and switch to kt-paperclip (https://github.com/kreeti/kt-paperclip).
