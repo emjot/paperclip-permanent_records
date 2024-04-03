@@ -18,6 +18,8 @@ AllCops:
     - '**/Rakefile'
     - '**/Capfile'
     - '**/*.rb'
+  Exclude:
+    - 'gemfiles/**/*.gemfile'
   NewCops: enable
   TargetRubyVersion: 2.7
 
