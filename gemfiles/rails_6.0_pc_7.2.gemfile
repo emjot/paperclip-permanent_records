@@ -3,6 +3,6 @@
 source "https://rubygems.org"
 
 gem "rails", "~> 6.0.0"
-gem "kt-paperclip", "~> 7.1.1"
+gem "kt-paperclip", "~> 7.2.2"
 
 gemspec path: "../"
