@@ -1,6 +1,10 @@
 # (unreleased)
 
-# 0.7.0 (2024-04-04)
+# 0.7.1 (2024-04-04)
+
+* (dev) Fix some requires
+
+# 0.7.0 (not released)
 
 * Add support for rails 6.0/6.1/7.0/7.1, ruby 3.0/3.1/3.2
 * Drop support for kt-paperclip < 7.2

@@ -9,7 +9,6 @@ require 'bundler/gem_tasks'
 
 require 'appraisal'
 require 'rspec/core/rake_task'
-require 'wwtd/tasks'
 
 desc 'Default: run all tests with all supported versions'
 task default: :all
