@@ -29,37 +29,22 @@ jobs:
           - 3.1.4
           - 3.2.3
         appraisal:
-          - rails_5.2_pc_7.1
-          - rails_5.2_pc_7.2
-          - rails_6.0_pc_7.1
-          - rails_6.0_pc_7.2
-          - rails_6.1_pc_7.1
-          - rails_6.1_pc_7.2
-          - rails_7.0_pc_7.1
-          - rails_7.0_pc_7.2
-          - rails_7.1_pc_7.1
-          - rails_7.1_pc_7.2
+          - rails_5.2
+          - rails_6.0
+          - rails_6.1
+          - rails_7.0
+          - rails_7.1
         exclude:
           - ruby: 3.0.6
-            appraisal: rails_5.2_pc_7.1
-          - ruby: 3.0.6
-            appraisal: rails_5.2_pc_7.2
+            appraisal: rails_5.2
           - ruby: 3.1.4
-            appraisal: rails_5.2_pc_7.1
-          - ruby: 3.1.4
-            appraisal: rails_5.2_pc_7.2
+            appraisal: rails_5.2
           - ruby: 3.2.3
-            appraisal: rails_5.2_pc_7.1
-          - ruby: 3.2.3
-            appraisal: rails_5.2_pc_7.2
+            appraisal: rails_5.2
           - ruby: 2.7.8
-            appraisal: rails_7.0_pc_7.1
+            appraisal: rails_7.0
           - ruby: 2.7.8
-            appraisal: rails_7.0_pc_7.2
-          - ruby: 2.7.8
-            appraisal: rails_7.1_pc_7.1
-          - ruby: 2.7.8
-            appraisal: rails_7.1_pc_7.2
+            appraisal: rails_7.1
     steps:
       - name: Install system dependencies
         run: sudo apt-get install -y libsqlite3-dev

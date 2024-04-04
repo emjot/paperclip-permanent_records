@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.7'
 
   spec.add_dependency 'activerecord', '>= 5.2'
-  spec.add_dependency 'kt-paperclip', ['>= 6.2.2', '< 8']
+  spec.add_dependency 'kt-paperclip', ['>= 7.2', '< 8']
   spec.add_dependency 'permanent_records', '>= 6.0'
 
   spec.add_development_dependency 'appraisal', '~> 2.5'
