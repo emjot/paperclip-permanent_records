@@ -9,11 +9,13 @@ NOTE: Since paperclip is not maintained any more, we have switched the dependenc
 
 ## Compatibility
 
-* rails 5.2: works with kt-paperclip 6.2.2+/7 and ruby 2.7 or later
-* tested with permanent_records 5.0.0
-* previous versions of ruby/rails/paperclip: please check version 0.5.x of this gem
+* rails 5.2: works with kt-paperclip 7 and ruby ~> 2.7
+* rails 6.0/6.1: works with kt-paperclip ~> 7.2 and ruby 2.7.8 or later
+* rails 7.0/7.1: works with kt-paperclip ~> 7.2 and ruby 3.0.6 or later
+* tested with permanent_records 6.0.0
+* previous versions of ruby/rails/paperclip: please check version 0.6.x of this gem
 
-Please see `.travis.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
+Please see `.github/workflows/test.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
 might cause data loss.
 
 ## Installation
@@ -51,14 +53,17 @@ This gem does basically two things:
 
 Code style: Please use rubocop before you commit (`bundle exec rubocop`) and fix any warnings.
 
-To setup tests, make sure all the ruby versions defined in `.travis.yml` are installed on your system.
-Use `bundle exec appraisal generate` to generate the gemfiles if you change them in `Appraisals` and `.travis.yml`.
+Use `bundle exec appraisal generate` to generate the gemfiles if you change them in `Appraisals` and `.github/workflows/test.yml`.
 
-Run tests via:
+### Running tests
 
-* `rake wwtd` for all combinations of ruby/rails/kt-paperclip versions
-* `rake wwtd:local` for all rails/kt-paperclip versions, but only on current ruby
-* `rake spec` (or e.g. `bundle exec rspec spec --format documentation`) with main Gemfile and only on current ruby
+To setup tests, make sure all the ruby versions defined in `.github/workflows/test.yml` are installed on your system.
+
+Assuming you are using [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io/), run tests with each of the supported ruby versions:
+
+```
+RBENV_VERSION=2.7.8 bundle exec appraisal rspec
+```
 
 ## Install and release
 
