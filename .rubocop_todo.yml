@@ -61,12 +61,6 @@ RSpec/ReceiveMessages:
   Exclude:
     - 'spec/paperclip/permanent_records_spec.rb'
 
-# Offense count: 6
-# This cop supports safe autocorrection (--autocorrect).
-RSpec/RedundantPredicateMatcher:
-  Exclude:
-    - 'spec/paperclip/permanent_records_spec.rb'
-
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
 # Configuration parameters: .
