@@ -43,7 +43,6 @@ Paperclip.interpolates(:test_env_number) do |_, _|
 end
 
 # set up models
-require 'fileutils'
 require 'logger'
 tmpdir = File.join(File.dirname(__FILE__), '../tmp')
 FileUtils.mkdir(tmpdir) unless File.exist?(tmpdir)
