@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Patch for paperclip >= 3.5.0 (based on 6.1.0)
+# Patch for (kt-)paperclip >= 3.5.0 (based on 7.2.2)
 
 module Paperclip
   class HasAttachedFile
