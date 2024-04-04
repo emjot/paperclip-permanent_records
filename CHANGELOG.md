@@ -1,9 +1,9 @@
 # (unreleased)
 
-* (dev) switch to GitHub Actions for CI tests
-* Add support for rails 6.0/6.1, ruby 3.0/3.1
-* Drop support for kt-paperclip 6
+* Add support for rails 6.0/6.1/7.0/7.1, ruby 3.0/3.1/3.2
+* Drop support for kt-paperclip < 7.2
 * Drop support for ruby < 2.7
+* (dev) switch to GitHub Actions for CI tests
 * (dev) add rake:release task
 * (dev) update dev dependencies, fix rubocop config, fix rubocop warnings
 
