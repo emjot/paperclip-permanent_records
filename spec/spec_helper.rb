@@ -28,7 +28,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 
   config.after(:suite) do
-    FileUtils.rm_rf TEST_ASSETS_PATH if File.exist?(TEST_ASSETS_PATH)
+    FileUtils.rm_rf TEST_ASSETS_PATH
   end
 end
 
@@ -45,7 +45,7 @@ end
 # set up models
 require 'logger'
 tmpdir = File.join(File.dirname(__FILE__), '../tmp')
-FileUtils.mkdir(tmpdir) unless File.exist?(tmpdir)
+FileUtils.mkdir_p(tmpdir)
 log = File.expand_path(File.join(tmpdir, 'permanent_records_test.log'))
 FileUtils.touch(log) unless File.exist?(log)
 ActiveRecord::Base.logger = Logger.new(log)
