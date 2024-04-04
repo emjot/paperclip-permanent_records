@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Post < ActiveRecord::Base
   has_attached_file :image,
     url: '/system/:test_env_number/:class/:attachment/:id/:style-:fingerprint.:extension'

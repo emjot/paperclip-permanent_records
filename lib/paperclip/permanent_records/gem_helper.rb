@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Paperclip
   module PermanentRecords
     # Patches Bundler::GemHelper to allow setting HTTP Basic Auth credentials for the

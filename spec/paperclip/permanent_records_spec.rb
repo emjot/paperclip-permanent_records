@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe Paperclip::PermanentRecords do
@@ -32,23 +34,23 @@ RSpec.describe Paperclip::PermanentRecords do
       it "keeps the attachments' files" do
         model.destroy
         expect(model).to be_image
-        expect(File).to be_exist(file_path)
+        expect(File).to exist(file_path)
 
         # should still be okay even after saving again
         model.save!
         expect(model).to be_image
-        expect(File).to be_exist(file_path)
+        expect(File).to exist(file_path)
       end
 
       it "keeps the attachments' files after revive" do
         model.destroy.revive
         expect(model).to be_image
-        expect(File).to be_exist(file_path)
+        expect(File).to exist(file_path)
 
         # should still be okay even after saving again
         model.save!
         expect(model).to be_image
-        expect(File).to be_exist(file_path)
+        expect(File).to exist(file_path)
       end
 
       context 'with :force option' do
@@ -59,7 +61,7 @@ RSpec.describe Paperclip::PermanentRecords do
         it "deletes the attachments' files" do
           model.destroy(:force)
           expect(model).not_to be_image
-          expect(File).not_to be_exist(file_path)
+          expect(File).not_to exist(file_path)
         end
       end
     end
@@ -93,7 +95,7 @@ RSpec.describe Paperclip::PermanentRecords do
       it "deletes the attachments' files" do
         model.destroy
         expect(model).not_to be_image
-        expect(File).not_to be_exist(file_path)
+        expect(File).not_to exist(file_path)
       end
     end
 

@@ -1,4 +1,6 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require 'pathname'
 require 'fileutils'
 
@@ -26,7 +28,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 
   config.after(:suite) do
-    FileUtils.rm_rf TEST_ASSETS_PATH if File.exist?(TEST_ASSETS_PATH)
+    FileUtils.rm_rf TEST_ASSETS_PATH
   end
 end
 
@@ -41,15 +43,14 @@ Paperclip.interpolates(:test_env_number) do |_, _|
 end
 
 # set up models
-require 'fileutils'
 require 'logger'
 tmpdir = File.join(File.dirname(__FILE__), '../tmp')
-FileUtils.mkdir(tmpdir) unless File.exist?(tmpdir)
+FileUtils.mkdir_p(tmpdir)
 log = File.expand_path(File.join(tmpdir, 'permanent_records_test.log'))
 FileUtils.touch(log) unless File.exist?(log)
 ActiveRecord::Base.logger = Logger.new(log)
 ActiveRecord::LogSubscriber.attach_to(:active_record)
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
-require File.expand_path('../data/schema', __FILE__)
-require File.expand_path('../data/models', __FILE__)
+require File.expand_path('data/schema', __dir__)
+require File.expand_path('data/models', __dir__)
 I18n.locale = I18n.default_locale = :en

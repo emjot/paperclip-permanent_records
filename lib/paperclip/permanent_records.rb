@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'paperclip/permanent_records/version'
 
 require 'paperclip'

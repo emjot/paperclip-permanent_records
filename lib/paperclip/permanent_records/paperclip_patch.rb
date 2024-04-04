@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Patch for paperclip >= 3.5.0 (based on 6.1.0)
 
 module Paperclip
