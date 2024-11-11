@@ -45,6 +45,6 @@ jobs:
       - name: Install bundle
         run: bundle
       - name: Install appraisal
-        run: bundle exec appraisal install
+        run: bundle exec appraisal ${{ matrix.appraisal }} bundle install
       - name: Run tests
         run: bundle exec appraisal ${{ matrix.appraisal }} rspec
