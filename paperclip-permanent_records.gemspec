@@ -11,10 +11,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['herold@emjot.de']
   spec.summary       = 'Make paperclip attachments work with permanent_records'
   spec.description   = 'Make paperclip attachments work with permanent_records'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/emjot/paperclip-permanent_records'
   spec.license       = 'MIT'
-
-  spec.metadata['allowed_push_host'] = 'https://gems.emjot.de'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }

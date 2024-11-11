@@ -69,10 +69,8 @@ RBENV_VERSION=2.7.8 bundle exec appraisal rspec
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
-For the following, replace `user:pass` with the HTTP Basic Auth credentials for the gem server ([gems.emjot.de](https://gems.emjot.de)).
-
 * Prepare:
   * update `CHANGELOG.md` documentation
   * update the version number in `lib/paperclip/permanent_records/version.rb`
 * Release
-  * run `RUBYGEMS_USERINFO=user:pass bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to the gem server
+  * run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to rubygems.org
