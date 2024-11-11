@@ -1,5 +1,9 @@
 # (unreleased)
 
+# 0.8.1 (2024-11-11)
+
+* (internal) Add some metadata for rubygems.org
+
 # 0.8.0 (2024-11-11)
 
 * Add support for ruby 3.3 and rails 7.1
