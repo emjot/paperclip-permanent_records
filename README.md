@@ -15,7 +15,7 @@ NOTE: Since paperclip is not maintained any more, we have switched the dependenc
 * tested with permanent_records 6.0.0
 * previous versions of ruby/rails/paperclip: please check version 0.6.x of this gem
 
-Please see `.github/workflows/test.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
+Please see `.github/workflows/lint_and_test.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
 might cause data loss.
 
 ## Installation
@@ -53,11 +53,11 @@ This gem does basically two things:
 
 Code style: Please use rubocop before you commit (`bundle exec rubocop`) and fix any warnings.
 
-Use `bundle exec appraisal generate` to generate the gemfiles if you change them in `Appraisals` and `.github/workflows/test.yml`.
+Use `bundle exec appraisal generate` to generate the gemfiles if you change them in `Appraisals` and `.github/workflows/lint_and_test.yml`.
 
 ### Running tests
 
-To setup tests, make sure all the ruby versions defined in `.github/workflows/test.yml` are installed on your system.
+To setup tests, make sure all the ruby versions defined in `.github/workflows/lint_and_test.yml` are installed on your system.
 
 Assuming you are using [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io/), run tests with each of the supported ruby versions:
 
