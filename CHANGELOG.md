@@ -1,7 +1,7 @@
 # (unreleased)
 
+* Add support for ruby 3.3 and rails 7.1
 * Drop support for ruby < 3.0 and rails < 6.1
-* Add ruby 3.3 to test matrix
 * (dev) Fix github test action to only install the gems based on the current appraisal gemfile
 * (internal) Update some dev dependencies incl. rubocop + config + fix some warnings
 
