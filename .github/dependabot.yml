@@ -12,3 +12,7 @@ updates:
     schedule:
       interval: "weekly"
     vendor: true
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
