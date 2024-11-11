@@ -1,5 +1,9 @@
 # (unreleased)
 
+* Drop support for ruby < 3.0 and rails < 6.1
+* Add ruby 3.3 to test matrix
+* (internal) Update some dev dependencies incl. rubocop + config + fix some warnings
+
 # 0.7.1 (2024-04-04)
 
 * (dev) Fix some requires

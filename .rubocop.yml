@@ -4,6 +4,7 @@ require:
   - rubocop-performance
   - rubocop-rake
   - rubocop-rspec
+  - rubocop-rspec_rails
 
 inherit_mode:
   merge:
@@ -22,7 +23,7 @@ AllCops:
   Exclude:
     - 'gemfiles/**/*.gemfile'
   NewCops: enable
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
 
 Layout/ArgumentAlignment:
   EnforcedStyle: 'with_fixed_indentation'
