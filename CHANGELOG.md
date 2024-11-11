@@ -1,5 +1,7 @@
 # (unreleased)
 
+# 0.7.2 (2024-11-11)
+
 * (backport) (dev) Fix: gem should be pushed to rubygems.org
 
 # 0.7.1 (2024-04-04)
