@@ -2,6 +2,7 @@
 
 * Add support for ruby 3.3 and rails 7.1
 * Drop support for ruby < 3.0 and rails < 6.1
+* (dev) Fix: gem should be pushed to rubygems.org
 * (dev) Fix github test action to only install the gems based on the current appraisal gemfile
 * (dev) dependabot: add github-actions
 * (internal) Update some dev dependencies incl. rubocop + config + fix some warnings
