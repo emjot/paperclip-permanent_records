@@ -12,7 +12,7 @@ module Paperclip
           schedule_attachments_for_deletion # => delete the attachments
         end
 
-        super(force)
+        super
       end
 
       private

@@ -9,11 +9,9 @@ NOTE: Since paperclip is not maintained any more, we have switched the dependenc
 
 ## Compatibility
 
-* rails 5.2: works with kt-paperclip 7 and ruby ~> 2.7
-* rails 6.0/6.1: works with kt-paperclip ~> 7.2 and ruby 2.7.8 or later
-* rails 7.0/7.1: works with kt-paperclip ~> 7.2 and ruby 3.0.6 or later
+* rails 6.1/7.0/7.1: works with kt-paperclip ~> 7.2 and ruby 3.0.6 or later
 * tested with permanent_records 6.0.0
-* previous versions of ruby/rails/paperclip: please check version 0.6.x of this gem
+* previous versions of ruby/rails/paperclip: please check version 0.7.x of this gem
 
 Please see `.github/workflows/lint_and_test.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
 might cause data loss.
@@ -62,7 +60,7 @@ To setup tests, make sure all the ruby versions defined in `.github/workflows/li
 Assuming you are using [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io/), run tests with each of the supported ruby versions:
 
 ```
-RBENV_VERSION=2.7.8 bundle exec appraisal rspec
+RBENV_VERSION=3.0.6 bundle exec appraisal rspec
 ```
 
 ## Install and release
