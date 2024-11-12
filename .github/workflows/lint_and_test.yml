@@ -14,6 +14,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0.6
+          rubygems: 3.2.33
           bundler: 2.5
       - name: Install bundle
         run: bundle
@@ -45,6 +46,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
+          rubygems: latest
           bundler: 2.5
       - name: Install bundle
         run: bundle
