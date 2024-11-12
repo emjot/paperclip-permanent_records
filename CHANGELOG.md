@@ -1,6 +1,6 @@
 # (unreleased)
 
-* (internal) Github actions: Fix build problems by specifying a working version of rubygems for linting and simply using "latest" for tests (don't use the default from the respective rubies)
+* (internal) Github actions: Fix build problems by simply using "latest" rubygems version for both linting and tests (don't use the default from the respective rubies)
 
 # 0.8.1 (2024-11-11)
 
