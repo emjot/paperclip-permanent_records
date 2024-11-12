@@ -6,7 +6,7 @@
 
 # 0.8.0 (2024-11-11)
 
-* Add support for ruby 3.3 and rails 7.1
+* Add support for ruby 3.3 and rails 7.2
 * Drop support for ruby < 3.0 and rails < 6.1
 * (dev) Fix: gem should be pushed to rubygems.org
 * (dev) Fix github test action to only install the gems based on the current appraisal gemfile
