@@ -2,6 +2,7 @@
 
 * Add support for ruby 3.4/4.0, rails 8.0/8.1, and kt-paperclip 8
 * Drop support for ruby < 3.2 and rails < 7.2
+* Document that kt-paperclip's `return_file_attributes_on_destroy` option (8.0.0) has no effect on attachments managed by this gem (see README)
 * (dev) Switch to maintained `appraisal2` gem; update rubocop, rspec-rails
 * (dev) Add a regression/canary spec guarding the kt-paperclip `HasAttachedFile` patch against silent upstream changes
 * (dev) Fix sporadic test failures caused by running specs in multiple concurrent processes

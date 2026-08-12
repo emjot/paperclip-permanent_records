@@ -47,6 +47,20 @@ This gem does basically two things:
 * mark attachments to be deleted in the model's `destroy` method
   (depending on whether the model is actually destroyed or only deleted)
 
+### Known issues
+
+#### kt-paperclip's `return_file_attributes_on_destroy` option
+
+Because the paperclip patch above is applied globally (it overrides
+`Paperclip::HasAttachedFile` itself, not just permanent models), kt-paperclip's
+`return_file_attributes_on_destroy` option (added in 8.0.0) has no effect in
+apps using this gem, even on attachments belonging to non-permanent models.
+
+Details: The option relies on ActiveRecord's `@_destroy_callback_already_called` flag being set,
+but this gem calls `queue_all_for_delete` directly, before `super`, ahead of
+the point where ActiveRecord would normally set that flag. Attachment
+attributes are therefore always cleared, regardless of the option's value.
+
 ## Development
 
 Code style: Please use rubocop before you commit (`bundle exec rubocop`) and fix any warnings.
