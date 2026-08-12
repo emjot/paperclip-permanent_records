@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-# Patch for (kt-)paperclip >= 3.5.0 (based on 7.2.2)
+# Patch for (kt-)paperclip >= 3.5.0 (based on 7.2.2, verified unchanged through 8.0.0).
+# spec/paperclip/paperclip_patch_spec.rb guards against silent upstream drift in
+# the method overridden below.
 
 module Paperclip
   class HasAttachedFile
