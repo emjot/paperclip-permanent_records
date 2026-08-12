@@ -13,9 +13,9 @@ jobs:
       - name: Setup ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0.6
+          ruby-version: 3.2.11
           rubygems: latest
-          bundler: 2.5
+          bundler: 2.7
       - name: Install bundle
         run: bundle
       - name: Run rubocop
@@ -26,18 +26,11 @@ jobs:
     strategy:
       matrix:
         ruby:
-          - 3.0.6
-          - 3.1.4
-          - 3.2.6
-          - 3.3.6
+          - 3.2.11
+          - 3.3.11
         appraisal:
-          - rails_6.1
-          - rails_7.0
           - rails_7.1
           - rails_7.2
-        exclude:
-          - ruby: 3.0.6
-            appraisal: rails_7.2
     steps:
       - name: Install system dependencies
         run: sudo apt-get install -y libsqlite3-dev
@@ -47,7 +40,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           rubygems: latest
-          bundler: 2.5
+          bundler: 2.7
       - name: Install bundle
         run: bundle
       - name: Install appraisal
