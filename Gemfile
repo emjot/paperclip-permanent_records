@@ -6,7 +6,6 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'appraisal2'
-gem 'bundler', '~> 2.5'
 gem 'rake', '>= 13.0'
 gem 'rspec-rails', '~> 7.0'
 gem 'rubocop', '>= 1.89'

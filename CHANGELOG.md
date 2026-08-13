@@ -7,6 +7,7 @@
 * (dev) Add a regression/canary spec guarding the kt-paperclip `HasAttachedFile` patch against silent upstream changes
 * (dev) Fix sporadic test failures caused by running specs in multiple concurrent processes
 * (internal) Github actions: Fix build problems by simply using "latest" rubygems version for both linting and tests (don't use the default from the respective rubies)
+* (internal) Remove the Gemfile's bundler version pin, which conflicted with the Bundler version now installed by "latest" rubygems in CI
 
 # 0.8.1 (2024-11-11)
 
