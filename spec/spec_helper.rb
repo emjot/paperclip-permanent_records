@@ -27,8 +27,12 @@ RSpec.configure do |config|
   config.order = :random
   Kernel.srand config.seed
 
+  config.before(:suite) do
+    FileUtils.rm_rf PROCESS_ASSETS_PATH
+  end
+
   config.after(:suite) do
-    FileUtils.rm_rf TEST_ASSETS_PATH
+    FileUtils.rm_rf PROCESS_ASSETS_PATH
   end
 end
 
@@ -38,9 +42,19 @@ require 'paperclip/permanent_records'
 
 ActiveRecord::Base.include Paperclip::Glue
 
-Paperclip.interpolates(:test_env_number) do |_, _|
-  ENV['TEST_ENV_NUMBER'].presence || '0'
-end
+# Falls back to the current process's pid (rather than a constant) so that
+# concurrently-running rspec processes never compute identical attachment
+# paths and race each other in kt-paperclip's filesystem storage adapter.
+TEST_ENV_NUMBER = ENV['TEST_ENV_NUMBER'].presence || Process.pid.to_s
+
+# TEST_ASSETS_PATH is shared across all rspec processes (it's not scoped by
+# TEST_ENV_NUMBER), so cleaning it up wholesale would race with any other
+# rspec process concurrently writing under it. Only ever clean up this
+# process's own subtree (referenced by the before(:suite)/after(:suite)
+# hooks configured above).
+PROCESS_ASSETS_PATH = TEST_ASSETS_PATH.join('system', TEST_ENV_NUMBER)
+
+Paperclip.interpolates(:test_env_number) { |_, _| TEST_ENV_NUMBER }
 
 # set up models
 require 'logger'

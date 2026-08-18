@@ -13,11 +13,10 @@ jobs:
       - name: Setup ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0.6
+          ruby-version: 3.2.11
           rubygems: latest
-          bundler: 2.5
       - name: Install bundle
-        run: bundle
+        run: bundle install
       - name: Run rubocop
         run: bundle exec rubocop
   test:
@@ -26,18 +25,20 @@ jobs:
     strategy:
       matrix:
         ruby:
-          - 3.0.6
-          - 3.1.4
-          - 3.2.6
-          - 3.3.6
+          - 3.2.11
+          - 3.3.11
+          - 3.4.10
+          - 4.0.6
         appraisal:
-          - rails_6.1
-          - rails_7.0
           - rails_7.1
           - rails_7.2
-        exclude:
-          - ruby: 3.0.6
-            appraisal: rails_7.2
+          - rails_8.0
+          - rails_8.1
+        include:
+          - ruby: 3.2.11
+            appraisal: rails_7.1-kt_paperclip_7.2
+          - ruby: 3.2.11
+            appraisal: rails_8.1-permanent_records_7.0
     steps:
       - name: Install system dependencies
         run: sudo apt-get install -y libsqlite3-dev
@@ -47,9 +48,8 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           rubygems: latest
-          bundler: 2.5
       - name: Install bundle
-        run: bundle
+        run: bundle install
       - name: Install appraisal
         run: bundle exec appraisal ${{ matrix.appraisal }} bundle install
       - name: Run tests

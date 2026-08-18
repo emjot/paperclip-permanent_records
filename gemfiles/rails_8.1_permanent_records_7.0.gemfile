@@ -11,6 +11,7 @@ gem "rubocop-rake"
 gem "rubocop-rspec"
 gem "rubocop-rspec_rails"
 gem "sqlite3"
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 8.1.0"
+gem "permanent_records", :git => "https://github.com/JackDanger/permanent_records.git", :tag => "7.0.0"
 
 gemspec :path => "../"
