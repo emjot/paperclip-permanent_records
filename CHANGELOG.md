@@ -1,5 +1,7 @@
 # (unreleased)
 
+# 0.9.0 (2026-08-18)
+
 * Add support for ruby 3.4/4.0, rails 8.0/8.1, and kt-paperclip 8
 * Drop support for ruby < 3.2 and rails < 7.2
 * Document that kt-paperclip's `return_file_attributes_on_destroy` option (8.0.0) has no effect on attachments managed by this gem (see README)
