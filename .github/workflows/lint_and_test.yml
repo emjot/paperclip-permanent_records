@@ -37,6 +37,8 @@ jobs:
         include:
           - ruby: 3.2.11
             appraisal: rails_7.1-kt_paperclip_7.2
+          - ruby: 3.2.11
+            appraisal: rails_8.1-permanent_records_7.0
     steps:
       - name: Install system dependencies
         run: sudo apt-get install -y libsqlite3-dev

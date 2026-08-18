@@ -10,7 +10,7 @@ NOTE: Since paperclip is not maintained any more, we have switched the dependenc
 ## Compatibility
 
 * rails 7.1/7.2/8.0/8.1: works with kt-paperclip 7.2 or later and ruby 3.2 or later
-* tested with permanent_records 6.0.0
+* tested with permanent_records 6.0.0; 7.0.0 is also smoke-tested (it's tagged upstream but not yet published to rubygems.org ([JackDanger/permanent_records#116](https://github.com/JackDanger/permanent_records/issues/116); note that we might drop testing / officially supporting 6.x at some point)
 * previous versions of ruby/rails/paperclip: please check version 0.8.x of this gem
 
 Please see `.github/workflows/lint_and_test.yml` and `Appraisals` for what combinations have actually been tested. Usage with other versions
