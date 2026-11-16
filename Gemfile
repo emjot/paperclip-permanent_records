@@ -7,7 +7,7 @@ gemspec
 
 gem 'appraisal2'
 gem 'rake', '>= 13.0'
-gem 'rspec-rails', '~> 7.0'
+gem 'rspec-rails', '~> 8.1'
 gem 'rubocop', '>= 1.89'
 gem 'rubocop-performance'
 gem 'rubocop-rake'
